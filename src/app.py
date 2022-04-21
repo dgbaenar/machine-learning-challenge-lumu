@@ -6,12 +6,12 @@ import uvicorn
 app = FastAPI()
 
 
-@app.get("/health")
+@app.get("/")
 def health():
     return 'ok'
 
 
-@app.get("/")
+@app.get("/test")
 async def root():
     return {"message": "Hello World"}
 
