@@ -34,9 +34,15 @@ python train/train.py
 
 The previous commands will preprocess the raw dataset, create the train and test sets, generate the exploratory data analysis and train the model.
 
-## How to run the model locally?
+## How to run the model?
 
 ### Option 1:
+
+Use the website that I shared to you by email (https://jnge3ehtyv.us-east-1.awsapprunner.com/). The features used in the model are the ones located in the file "./data/variables/vars_raw.json" (MODEL_INPUT). Once the model receive that input, transform the variables to the variables in "FINAL_DATA" to make the predictions.
+
+In the file located at "./test/test.json", there is an example of the body that the model receives. It is important to keep in mind that if any of the variables listed "MODEL_INPUT" is missing or if the type is not the same as indicated in the vars_raw.json file, the service will return an error.
+
+### Option 2:
 
 After creating the virtual environment, install the libraries and run:
 
@@ -48,7 +54,7 @@ python app.py
 
 This command will rise the web app on the port 8000 of your computer.
 
-### Option 2:
+### Option 3:
 
 Build and run the docker container:
 
