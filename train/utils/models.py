@@ -168,7 +168,7 @@ def predict_and_get_metrics(set, model, X_set, y_set,
             fd, indent=4
         )
 
-    return y_pred_scores, y_pred_labels
+    return y_pred_scores, y_pred_labels, metrics_dict
 
 
 def explainability(model, X_test):

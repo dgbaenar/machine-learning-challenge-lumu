@@ -4,26 +4,61 @@
 #
 #    pip-compile
 #
+alembic==1.7.7
+    # via mlflow
 autopep8==1.6.0
     # via -r requirements.in
+certifi==2021.10.8
+    # via requests
+charset-normalizer==2.0.12
+    # via requests
 click==8.1.2
-    # via flask
+    # via
+    #   databricks-cli
+    #   flask
+    #   mlflow
 cloudpickle==2.0.0
-    # via shap
+    # via
+    #   mlflow
+    #   shap
 cycler==0.11.0
     # via matplotlib
+databricks-cli==0.16.6
+    # via mlflow
+docker==5.0.3
+    # via mlflow
+entrypoints==0.4
+    # via mlflow
 flake8==4.0.1
     # via -r requirements.in
 flask==2.1.1
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   mlflow
+    #   prometheus-flask-exporter
 fonttools==4.33.2
     # via matplotlib
+gitdb==4.0.9
+    # via gitpython
+gitpython==3.1.27
+    # via mlflow
+greenlet==1.1.2
+    # via sqlalchemy
 gunicorn==20.1.0
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   mlflow
+idna==3.3
+    # via requests
 importlib-metadata==4.11.3
-    # via flask
+    # via
+    #   alembic
+    #   flask
+    #   mlflow
 importlib-resources==5.7.1
-    # via sweetviz
+    # via
+    #   alembic
+    #   sweetviz
 itsdangerous==2.1.2
     # via flask
 jinja2==3.1.1
@@ -38,20 +73,27 @@ kiwisolver==1.4.2
     # via matplotlib
 llvmlite==0.38.0
     # via numba
+mako==1.2.0
+    # via alembic
 markupsafe==2.1.1
-    # via jinja2
+    # via
+    #   jinja2
+    #   mako
 matplotlib==3.5.1
     # via
     #   -r requirements.in
     #   sweetviz
 mccabe==0.6.1
     # via flake8
+mlflow==1.25.1
+    # via -r requirements.in
 numba==0.55.1
     # via shap
 numpy==1.21.6
     # via
     #   -r requirements.in
     #   matplotlib
+    #   mlflow
     #   numba
     #   pandas
     #   scikit-learn
@@ -59,23 +101,35 @@ numpy==1.21.6
     #   shap
     #   sweetviz
     #   xgboost
+oauthlib==3.2.0
+    # via databricks-cli
 packaging==21.3
     # via
     #   matplotlib
+    #   mlflow
     #   shap
 pandas==1.4.2
     # via
     #   -r requirements.in
+    #   mlflow
     #   shap
     #   sweetviz
 pillow==9.1.0
     # via matplotlib
+prometheus-client==0.14.1
+    # via prometheus-flask-exporter
+prometheus-flask-exporter==0.20.1
+    # via mlflow
+protobuf==3.20.1
+    # via mlflow
 pycodestyle==2.8.0
     # via
     #   autopep8
     #   flake8
 pyflakes==2.4.0
     # via flake8
+pyjwt==2.3.0
+    # via databricks-cli
 pyparsing==3.0.8
     # via
     #   matplotlib
@@ -85,13 +139,25 @@ python-dateutil==2.8.2
     #   matplotlib
     #   pandas
 pytz==2022.1
-    # via pandas
+    # via
+    #   mlflow
+    #   pandas
+pyyaml==6.0
+    # via mlflow
+querystring-parser==1.2.4
+    # via mlflow
+requests==2.27.1
+    # via
+    #   databricks-cli
+    #   docker
+    #   mlflow
 scikit-learn==1.0.2
     # via
     #   -r requirements.in
     #   shap
 scipy==1.8.0
     # via
+    #   mlflow
     #   scikit-learn
     #   shap
     #   sweetviz
@@ -99,11 +165,24 @@ scipy==1.8.0
 shap==0.40.0
     # via -r requirements.in
 six==1.16.0
-    # via python-dateutil
+    # via
+    #   databricks-cli
+    #   python-dateutil
+    #   querystring-parser
 slicer==0.0.7
     # via shap
+smmap==5.0.0
+    # via gitdb
+sqlalchemy==1.4.35
+    # via
+    #   alembic
+    #   mlflow
+sqlparse==0.4.2
+    # via mlflow
 sweetviz==2.1.3
     # via -r requirements.in
+tabulate==0.8.9
+    # via databricks-cli
 threadpoolctl==3.1.0
     # via scikit-learn
 toml==0.10.2
@@ -112,6 +191,10 @@ tqdm==4.64.0
     # via
     #   shap
     #   sweetviz
+urllib3==1.26.9
+    # via requests
+websocket-client==1.3.2
+    # via docker
 werkzeug==2.1.1
     # via flask
 xgboost==1.6.0

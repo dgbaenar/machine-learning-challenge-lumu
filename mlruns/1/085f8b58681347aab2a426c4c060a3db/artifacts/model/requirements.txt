@@ -1,0 +1,5 @@
+mlflow
+cloudpickle==2.0.0
+pkg-resources==0.0.0
+scikit-learn==1.0.2
+xgboost==1.6.0

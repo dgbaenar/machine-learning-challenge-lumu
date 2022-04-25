@@ -1,0 +1,15 @@
+artifact_uri: file:///home/daniel/Documents/db_repos/db-website/mlruns/1/f4e254847c0d42a89857eefe4fc0c211/artifacts
+end_time: 1650920065193
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: f4e254847c0d42a89857eefe4fc0c211
+run_uuid: f4e254847c0d42a89857eefe4fc0c211
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1650920030554
+status: 4
+tags: []
+user_id: daniel

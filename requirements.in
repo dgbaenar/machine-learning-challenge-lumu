@@ -10,3 +10,4 @@ gunicorn
 flake8
 autopep8
 sweetviz
+mlflow
