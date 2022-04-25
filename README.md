@@ -1,6 +1,6 @@
 # Machine Learning Engineer Challenge
 
-## UCI Default of Credit Card Clients Dataset
+## Credit Card Fraud Transactions Dataset
 
 The goal of this project is to automate the prediction of fraudulent credit card transacttions, giving a score to them from 0 to 1, being closer to 1 riskiers. The current repository uses a XGBoost model with a grid search approach to find optimal hyperparameters.
 
