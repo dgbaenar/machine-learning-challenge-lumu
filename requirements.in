@@ -1,0 +1,12 @@
+shap
+scikit-learn
+xgboost
+joblib
+matplotlib
+Flask
+numpy
+pandas
+gunicorn
+flake8
+autopep8
+sweetviz

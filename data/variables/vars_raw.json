@@ -1,0 +1,114 @@
+{
+    "MODEL_INPUT": [
+        "GENERO",
+        "OS",
+        "DIA_DE_LA_SEMANA",
+        "ESTABLECIMIENTO",
+        "CIUDAD",
+        "TIPO_TC",
+        "MONTO",
+        "HORA",
+        "DEVICE_SCORE",
+        "LINEA_TC",
+        "INTERES_TC",
+        "DCTO",
+        "CASHBACK",
+        "IS_PRIME"
+    ],
+    "FINAL_DATA": [
+        "MONTO",
+        "HORA",
+        "DEVICE_SCORE",
+        "LINEA_TC",
+        "INTERES_TC",
+        "DCTO",
+        "CASHBACK",
+        "IS_PRIME",
+        "GENERO_F",
+        "GENERO_M",
+        "OS_WEB",
+        "OS_ANDROID",
+        "OS_OTHER",
+        "DIA_DE_LA_SEMANA_MONDAY",
+        "DIA_DE_LA_SEMANA_TUESDAY",
+        "DIA_DE_LA_SEMANA_WEDNESDAY",
+        "DIA_DE_LA_SEMANA_THURSDAY",
+        "DIA_DE_LA_SEMANA_FRIDAY",
+        "DIA_DE_LA_SEMANA_SATURDAY",
+        "DIA_DE_LA_SEMANA_SUNDAY",
+        "ESTABLECIMIENTO_RESTAURANTE",
+        "ESTABLECIMIENTO_ABARROTES",
+        "ESTABLECIMIENTO_SUPER",
+        "ESTABLECIMIENTO_MPAGO",
+        "ESTABLECIMIENTO_FARMACIA",
+        "ESTABLECIMIENTO_OTHER",
+        "CIUDAD_TOLUCA",
+        "CIUDAD_GUADALAJARA",
+        "CIUDAD_MERIDA",
+        "CIUDAD_MONTERREY",
+        "CIUDAD_OTHER",
+        "TIPO_TC_FSICA",
+        "TIPO_TC_VIRTUAL"
+    ],
+    "CATEGORICAL_FEATURES": [
+        "GENERO",
+        "OS",
+        "DIA_DE_LA_SEMANA",
+        "ESTABLECIMIENTO",
+        "CIUDAD",
+        "TIPO_TC"
+    ],
+    "CATEGORIES": {
+        "GENERO": [
+            "F",
+            "M"
+        ],
+        "OS": [
+            "WEB",
+            "ANDROID"
+        ],
+        "DIA_DE_LA_SEMANA": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+        ],
+        "ESTABLECIMIENTO": [
+            "RESTAURANTE",
+            "ABARROTES",
+            "SUPER",
+            "MPAGO",
+            "FARMACIA"
+        ],
+        "CIUDAD":[
+            "TOLUCA",
+            "GUADALAJARA",
+            "MERIDA",
+            "MONTERREY"
+        ],
+        "TIPO_TC": [
+            "FSICA",
+            "VIRTUAL"
+        ]
+    },
+    "OTHER": [
+        "OS",
+        "ESTABLECIMIENTO",
+        "CIUDAD"
+    ],
+    "BOOLEAN_FEATURES": [
+        "IS_PRIME"
+    ],
+    "NUMERICAL_FEATURES": [
+        "MONTO",
+        "HORA",
+        "DEVICE_SCORE",
+        "LINEA_TC",
+        "INTERES_TC",
+        "DCTO",
+        "CASHBACK"
+    ]
+}

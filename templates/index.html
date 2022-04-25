@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daniel Baena personal site</title>
+</head>
+<body>
+  <h1>Machine Learning Engineer Challenge</h1>
+  <p><em>Lumu | Neural Design<strong></strong>.</em></p>
+  <p>Please go to the model repository and follow the instructions before running the model.</p>
+  <p>
+    Link to:
+    <a href="https://github.com/dgbaenar/db-website" target="_blank">Model Repository</a>.
+  </p>
+  <hr>
+  <h3>
+    <a href="/eda" target="_blank">Exploratory Data Analysis (EDA)</a>
+  </h3>
+  <hr>
+  <h3>Model</h3>
+  <form action="/calculate" target="_blank" method="post">
+    <textarea cols="50" rows="20" name="modelinput">{
+      "GENERO": "F",
+      "OS": "ANDROID",
+      "DIA_DE_LA_SEMANA": "Tuesday",
+      "ESTABLECIMIENTO": null,
+      "CIUDAD": "Toluca",
+      "TIPO_TC": "Fsica",
+      "MONTO": 100.0152171,
+      "HORA": 18,
+      "DEVICE_SCORE": 5,
+      "LINEA_TC": 43000,
+      "INTERES_TC": 38,
+      "DCTO": 0.0,
+      "CASHBACK": 1.000152171,
+      "IS_PRIME": false
+}</textarea>
+  <input type="Submit" value="Calculate Score">
+  </form>
+  
+  <hr>
+  <h3>Next steps</h3>
+  <ul>
+    <li>Include more performance metrics.</li>
+    <li>Include feature selection steps.</li>
+  </ul>
+  <hr>
+</body>
+
+</html>

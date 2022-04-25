@@ -1,0 +1,17 @@
+{
+    "GENERO": "M",
+    "OS": ",",
+    "DIA_DE_LA_SEMANA": "Sunday",
+    "ESTABLECIMIENTO": "Abarrotes",
+    "CIUDAD": "Merida",
+    "TIPO_TC": "Fsica",
+    "MONTO": 848.2749662,
+    "HORA": 19,
+    "DEVICE_SCORE": 1,
+    "LINEA_TC": 76000,
+    "INTERES_TC": 44,
+    "DCTO": 169.6549932,
+    "CASHBACK": 6.78619973,
+    "IS_PRIME": false,
+    "FRAUDE": 0
+}

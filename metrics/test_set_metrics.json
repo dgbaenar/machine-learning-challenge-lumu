@@ -1,0 +1,18 @@
+{
+    "test_set": {
+        "Threshold": 0.993,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "ROC AUC": 0.52,
+        "Other thresholds": {
+            "0.4": "f2:              0.231 | Precision: 0.034 \\ | Recall: 0.632",
+            "0.5": "f2:              0.234 | Precision: 0.037 \\ | Recall: 0.581",
+            "0.6": "f2:              0.202 | Precision: 0.034 \\ | Recall: 0.449",
+            "0.7": "f2:              0.172 | Precision: 0.032 \\ | Recall: 0.338",
+            "0.8": "f2:              0.178 | Precision: 0.039 \\ | Recall: 0.294",
+            "0.9": "f2:              0.096 | Precision: 0.031 \\ | Recall: 0.125",
+            "0.95": "f2:              0.081 | Precision: 0.047 \\ | Recall: 0.088",
+            "0.97": "f2:              0.066 | Precision: 0.062 \\ | Recall: 0.066"
+        }
+    }
+}
