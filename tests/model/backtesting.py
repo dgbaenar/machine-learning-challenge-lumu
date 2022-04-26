@@ -125,7 +125,7 @@ def plot_scoring_intervals(table, table_prop):
                      fontweight="bold")
 
     plt.legend(bbox_to_anchor=(1.0, 1.0))
-    plt.xlabel("Week of the year")
+    plt.xlabel("Day of the week")
     plt.xticks(rotation=0)
     plt.savefig("./metrics/img/scoring_interval.png")
     plt.close()
