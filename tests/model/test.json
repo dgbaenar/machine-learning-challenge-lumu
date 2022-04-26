@@ -1,0 +1,17 @@
+{
+    "GENERO": "M",
+    "OS": "%%",
+    "DIA_DE_LA_SEMANA": "Monday",
+    "ESTABLECIMIENTO": "Super",
+    "CIUDAD": "Merida",
+    "TIPO_TC": "Fsica",
+    "MONTO": 60.70933531,
+    "HORA": 3,
+    "DEVICE_SCORE": 4,
+    "LINEA_TC": 85000,
+    "INTERES_TC": 55,
+    "DCTO": 6.070933531,
+    "CASHBACK": 0.546384018,
+    "IS_PRIME": false,
+    "FRAUDE": 0
+}

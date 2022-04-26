@@ -82,6 +82,7 @@ markupsafe==2.1.1
 matplotlib==3.5.1
     # via
     #   -r requirements.in
+    #   seaborn
     #   sweetviz
 mccabe==0.6.1
     # via flake8
@@ -98,6 +99,7 @@ numpy==1.21.6
     #   pandas
     #   scikit-learn
     #   scipy
+    #   seaborn
     #   shap
     #   sweetviz
     #   xgboost
@@ -112,6 +114,7 @@ pandas==1.4.2
     # via
     #   -r requirements.in
     #   mlflow
+    #   seaborn
     #   shap
     #   sweetviz
 pillow==9.1.0
@@ -159,9 +162,12 @@ scipy==1.8.0
     # via
     #   mlflow
     #   scikit-learn
+    #   seaborn
     #   shap
     #   sweetviz
     #   xgboost
+seaborn==0.11.2
+    # via -r requirements.in
 shap==0.40.0
     # via -r requirements.in
 six==1.16.0

@@ -1,18 +1,18 @@
 {
     "train_set": {
-        "Threshold": 0.679,
-        "Precision": 1.0,
-        "Recall": 1.0,
-        "ROC AUC": 1.0,
+        "Threshold": 0.423,
+        "Precision": 0.958,
+        "Recall": 0.998,
+        "ROC AUC": 0.999,
         "Other thresholds": {
-            "0.4": "f2:              1.0 | Precision: 1.0 \\ | Recall: 1.0",
-            "0.5": "f2:              1.0 | Precision: 1.0 \\ | Recall: 1.0",
-            "0.6": "f2:              1.0 | Precision: 1.0 \\ | Recall: 1.0",
-            "0.7": "f2:              0.999 | Precision: 1.0 \\ | Recall: 0.999",
-            "0.8": "f2:              0.975 | Precision: 1.0 \\ | Recall: 0.972",
-            "0.9": "f2:              0.753 | Precision: 1.0 \\ | Recall: 0.733",
-            "0.95": "f2:              0.361 | Precision: 1.0 \\ | Recall: 0.337",
-            "0.97": "f2:              0.173 | Precision: 1.0 \\ | Recall: 0.159"
+            "0.4": "f2:              0.991 | Precision: 0.936 \\ | Recall: 0.998",
+            "0.5": "f2:              0.981 | Precision: 0.99 \\ | Recall: 0.98",
+            "0.6": "f2:              0.944 | Precision: 0.998 \\ | Recall: 0.938",
+            "0.7": "f2:              0.832 | Precision: 1.0 \\ | Recall: 0.817",
+            "0.8": "f2:              0.548 | Precision: 1.0 \\ | Recall: 0.522",
+            "0.9": "f2:              0.176 | Precision: 1.0 \\ | Recall: 0.161",
+            "0.95": "f2:              0.02 | Precision: 1.0 \\ | Recall: 0.018",
+            "0.97": "f2:              0.004 | Precision: 1.0 \\ | Recall: 0.004"
         }
     }
 }

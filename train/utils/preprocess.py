@@ -1,5 +1,5 @@
 import ast
-from datetime import datetime
+import datetime
 import json
 import joblib
 import numpy as np
@@ -19,7 +19,7 @@ def prepare_dataset(raw_path, test_path, metric_col):
     # Create features
     # Dia de la semana
     data["DIA_DE_LA_SEMANA"] = data["FECHA"].apply(
-        lambda x: str(datetime.strptime(x, '%d/%m/%Y').strftime("%A")))
+        lambda x: str(datetime.datetime.strptime(x, '%d/%m/%Y').strftime("%A")))
     # Monto
     data["MONTO"] = data["MONTO"].apply(
         lambda x: float(x.replace(',', '.'))).apply(lambda x: float(x))
@@ -41,8 +41,18 @@ def prepare_dataset(raw_path, test_path, metric_col):
     data[st.METRIC_NAME] = data[st.METRIC_NAME].astype(int)
     data.columns = data.columns.str.upper()
 
-    # Save raw processed
+    # Separate backtesting dataset and raw dataset
+    data["FECHA"] = data["FECHA"].apply(
+        lambda x: str(datetime.datetime.strptime(x, '%d/%m/%Y')))
+    data["FECHA"] = pd.to_datetime(data['FECHA'])
+    backtesting_set = data[data["FECHA"] >=
+                           (data["FECHA"].max() - datetime.timedelta(days=7))]
+    data = data[data["FECHA"] <
+                (data["FECHA"].max() - datetime.timedelta(days=7))]
+
+    # Save raw and bactesting set processed
     data.to_csv("./data/raw_processed.csv", index=False)
+    backtesting_set.to_csv("./data/backtesting.csv", index=False)
 
     # Select variables
     data = data[st.CATEGORICAL_FEATURES + st.NUMERICAL_FEATURES +
